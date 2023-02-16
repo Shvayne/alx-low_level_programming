@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main - a program that prints some string to standard error
+ * main - a program that prints some specified string to the standard error
  * Return: 1 (success)
  */
 int main(void)
