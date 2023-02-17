@@ -5,18 +5,18 @@
  */
 int main(void)
 {
-int n, m, t;
+int n, m, l;
 for (n = 48; n < 58; n++)
 {
 for (m = 49; n < 58; m++)
 {
-for (t = 50; t < 58; t++)
+for (l = 50; l < 58; l++)
 {
-if (t > m && m > n)
+if (l > m && m > n)
 {
 putchar(n);
 putchar(m);
-putchar(t);
+putchar(l);
 if (n != 55 || m != 56)
 {
 putchar(',');
