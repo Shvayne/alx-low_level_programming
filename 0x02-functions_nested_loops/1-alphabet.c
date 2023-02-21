@@ -5,11 +5,11 @@
  */
 void print_alphabet(void)
 {
-char a;
-for (a = '97'; a <= '122'; ++a)
+char letter;
+for (letter = 'a'; a <= 'z'; letter++)
 {
-_putchar(a);
-_putchar('\n')
+_putchar(letter);
+_putchar('\n');
 }
 return;
 }
