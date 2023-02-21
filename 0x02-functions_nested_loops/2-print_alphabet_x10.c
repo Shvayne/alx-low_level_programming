@@ -19,6 +19,6 @@ if (printed)
 {
 _putchar('\n');
 }
-return;
 }
+return;
 }
