@@ -12,7 +12,7 @@ for (a = 97; a <= 122; ++a)
 _putchar(a);
 printed = 1;
 }
-if (printed) 
+if (printed)
 {
 _putchar('\n');
 }
