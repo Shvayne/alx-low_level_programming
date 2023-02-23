@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * main - prints numbers 1-100
  * but prints fizz or buzz for muliples
