@@ -21,6 +21,10 @@ for (int i = 1; i <= 100; i++)
 	{
 		printf(" Buzz");
 	}
+	else if (i == 1)
+	{
+	printf("%d", i);
+	}
 	else
 	{
 	printf(" %d", i);
