@@ -5,20 +5,14 @@
  */
 int main(void)
 {
-	long int num = 612852475143;
-	int i = 2;
+	long int x = 612852475143;
+	long int pf = 2;
 
-	while (num != 1)
+	for (pf = 2; pf < x; pf++)
 	{
-		if (num % i == 0)
-		{
-			num /= i;
-		}
-		else
-		{
-			i++;
-		}
+		if ((x % pf) == 0)
+			x = x / pf;
 	}
-	printf("%d", i);
+	printf("%ld\n", pf);
 	return (0);
 }
