@@ -6,7 +6,7 @@
  * _strcat - concancate two strings
  * @dest: destination
  * @src: input value
- * Return: newstring
+ * Return: concancated string
  */
 char *_strcat(char *dest, char *src)
 {
