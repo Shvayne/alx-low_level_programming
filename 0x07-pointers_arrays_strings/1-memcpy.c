@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * _memcpy - copy bytes from one memory
  * location to another
@@ -10,14 +9,13 @@
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	char *dest_startpoint = dest;
-	char *src_startpoint = src;
+	int r = 0;
+	int i = n;
 
-	while (n--)
+	for (; r < i; r++)
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		dest[r] = src[r];
+		n--;
 	}
-	return (dest_startpoint);
+	return (dest);
 }
