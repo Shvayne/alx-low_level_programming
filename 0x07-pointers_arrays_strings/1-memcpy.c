@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _memcpy - copy bytes from one memory
  * location to another
