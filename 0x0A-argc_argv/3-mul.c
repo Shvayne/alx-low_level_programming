@@ -44,7 +44,12 @@ int main(int argc, char *argv[])
 	int j = myAtoi(argv[2]);
 	int result = i * j;
 
-	if (argc < 3 && argc > 3 || argc < 0)
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	if (argc < 0)
 	{
 		printf("Error\n");
 		return (1);
