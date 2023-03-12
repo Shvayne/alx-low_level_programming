@@ -54,6 +54,11 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+	if (argc == 0)
+	{
+		printf("Error\n");
+		return (1);
+	}
 	printf("%d\n", result);
 		return (0);
 }
