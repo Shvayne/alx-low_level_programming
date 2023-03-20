@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <string.h>
 #include "dog.h"
 /**
  * init_dog - uses struct to access dog owner
