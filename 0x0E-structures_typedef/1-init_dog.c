@@ -3,7 +3,7 @@
 #include "dog.h"
 /**
  * init_dog - uses struct to access dog owner
- * parameters
+ * parameter
  * struct dog - identifies the dog owner's parameters
  * @d: variable
  * @name: first member
