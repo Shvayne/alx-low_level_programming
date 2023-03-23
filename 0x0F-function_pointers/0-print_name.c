@@ -7,7 +7,7 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	/* calls the function pointed by f with 1 argument */
+	/* calls the function pointed by f with an argument */
 	if (f != NULL || name != NULL)
 	(*f)(name);
 }
