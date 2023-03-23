@@ -8,6 +8,7 @@
 void print_name(char *name, void (*f)(char *))
 {
 	/* calls the function pointed by f with 1 argument */
+	if (f != NULL || name != NULL)
 	(*f)(name);
 }
 /**
