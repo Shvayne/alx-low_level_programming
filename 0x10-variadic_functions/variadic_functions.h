@@ -1,9 +1,10 @@
 #ifndef VAR_H
 #define VAR_H
+#include <stdarg.h>
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
-void string_handle(va_list str);
+void string_help(va_list args);
 void print_all(const char * const format, ...);
 
 #endif
