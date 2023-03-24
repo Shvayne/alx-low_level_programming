@@ -3,6 +3,22 @@
 #include <stdio.h>
 #include "variadic_functions.h"
 /**
+ * string_handle - handles string
+ * @str: variable pointer
+ */
+void string_handle(va_list str)
+{
+	char *string;
+
+	string = va_arg(str, char *);
+	if (string == NULL)
+	{
+		printf("(nil)");
+	}
+	printf("%s", string);
+}
+
+/**
  * print_all - prints all arguments, irrespective of type and number
  * @format: format specifier
  */
@@ -37,15 +53,7 @@ void print_all(const char * const format, ...)
 				flag = 1;
 				break;
 			case 's':
-				s = va_arg(args, char*);
-				if (s == NULL)
-				{
-					printf("(nil)");
-				}
-				else
-				{
-					printf("%s", s);
-				}
+				string_handle(args);
 				flag = 1;
 				break;
 			default:
