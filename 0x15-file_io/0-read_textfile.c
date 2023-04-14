@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <sys/types.h>
 #include <unistd.h>
 #include <fcntl.h>
 /**
@@ -9,12 +10,12 @@
  * @letters: how much byes to read
  * Return: 0 on failure or bytes written
  */
-size_t read_textfile(const char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *buffer;
-	size_t file_des;
-	size_t bytes_read;
-	size_t bytes_written;
+	ssize_t file_des;
+	ssize_t bytes_read;
+	ssize_t bytes_written;
 
 	if (filename == NULL)
 		return (0);
