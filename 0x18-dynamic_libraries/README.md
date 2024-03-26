@@ -1,0 +1,1 @@
+This project is a dynamic library written in C that provides reusable functions. It is intended to be linked dynamically with other programs to provide functionality without the need for duplicating code.
