@@ -1,9 +1,13 @@
 #!/bin/bash
-c_files=$(find . -maxdepth 1 -type f -name "*.c")
-for file in $c_files; do
-	gcc -c -fPIC "$file" -o "${file%.c}.o"
-done
 
-gcc -shared -o liball.so *.o
+SOURCE_FILES=$(ls *.c 2>/dev/null)
 
-rm *.o
+if [z "$SOURCE_FILES"]; then
+	exit 1
+fi
+LIBRARY_NAME="liball.so"
+
+CC="gcc"
+CFLAGS="-shared -fPIC"
+
+$CC $CFLAGS -o $LIBRARY_NAME $SOURCE_FILES
