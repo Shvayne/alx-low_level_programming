@@ -8,12 +8,14 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
     unsigned long int index = key_index((const unsigned char *)key, ht->size);
+    /*a new node for the key value pair*/
+    hash_node_t *new;
+
     if (index >= ht->size)
     {
         return 0;
     }
-    /*a new node for the key value pair*/
-    hash_node_t *new = malloc(sizeof(hash_node_t));
+    new = malloc(sizeof(hash_node_t));
     if (new == NULL) /*if malloc fails*/
         return 0;
 
