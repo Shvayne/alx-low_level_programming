@@ -14,6 +14,10 @@ int jump_search(int *array, size_t size, int value)
     size_t step = sqrt(size); /* Calculate the jump step size as the square root of the array size */
     size_t prev = 0; /* Initialize the previous index to 0 */
     size_t i; /* Loop variable for linear search */
+    if (array == NULL || size == 0)
+    {
+        return (-1);
+    }
 
     /* Jump through the array in steps */
     while (prev < size && array[prev] < value)
